@@ -3,11 +3,12 @@
 <head>
 	<title></title>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+	<% include head %>
 
 </head>
 <body>
+
+	<% include nav-bar %>
 
 	<div class="container">
 		<div class="row">
@@ -16,7 +17,7 @@
 			</div>
 			<div class="col-sm-6 col-sm-offset-3">
 				<form id="search-form" class="form-inline" action="/search" method="post">
-					<input type="text" placeholder="Movie Trailer" name="searchString">
+					<input type="text" placeholder="Search a Thing" name="searchString">
 					<button type="submit" class="btn btn-primary">
 						Search
 					</button>

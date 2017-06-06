@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<% include head %>
+
+</head>
+<body>
+
+	<% include nav-bar %>
+
+	<div class="container">
+		<div class="row">
+			<div class="text-danger col-sm-12 text-center">
+				<form action="/processLogin" method="post">
+					<input type='email' placeholder="email" name='email'/>
+					<input type='password' placeholder="password" name='password'/>
+					<button type="submit" class="btn btn-primary">Login</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

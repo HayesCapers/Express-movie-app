@@ -1,7 +1,8 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  font-size: 40px;
+  /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
+  /* font-size: 40px; */
+  background-color: #0B0F24;
 }
 
 a {
@@ -9,6 +10,7 @@ a {
 }
 
 .movies img{
-	max-width: 100%;
+	width: 100%;
+	height: 100%;
 	margin-bottom: 10px;
 }

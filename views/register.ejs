@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<% include head %>
+
+</head>
+<body>
+
+	<% include nav-bar %>
+
+	<div class="container">
+		<div class="row">
+			<div class="text-danger col-sm-12 text-center">
+				<div class="text-danger col-sm-12 text-center">
+				 <h3><%= message %></h3>
+				</div>
+				<form action="/registerProcess" method="post">
+					<div class="col-sm-12">
+						<input type="text" placeholder="Enter your name" name="name" />
+					</div>
+					<div class="col-sm-12">
+						<input type="email" placeholder="Enter your email" name="email" />
+					</div>
+					<div class="col-sm-12">
+						<input type="password" placeholder="Enter your password" name="password" />
+					</div>
+					<div class="col-sm-12">
+						<button type="submit" class="btn btn-success">Submit</button>
+					</div>
+				</form> 
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

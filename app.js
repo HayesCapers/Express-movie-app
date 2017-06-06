@@ -7,8 +7,17 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var expressParser = require('express-session');
+var config = require('./config/config.js')
 
 var app = express();
+
+// Make req.session available
+app.use(expressParser({
+	secret: config.secret,
+	resave: false,
+	saveUninitialized: true
+}));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
